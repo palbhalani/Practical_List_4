@@ -1,0 +1,22 @@
+// Write a C++ program to demonstrate use of Destructor. 
+
+#include<iostream>
+using namespace std;
+class Student{
+	public :
+	Student()
+	{	    
+	    cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+		cout<<"Constructor Invoke"<<endl;
+	}
+	~Student()
+	{
+		cout<<"Destructor Invoke"<<endl;
+	}
+};
+int main()
+{
+	Student s1;
+	Student s2;
+}
