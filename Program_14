@@ -1,0 +1,23 @@
+// Write a C++ program to print message when object gets destroyed using destructor.
+
+#include<iostream>
+using namespace std;
+class Myclass{
+	public :
+		Myclass()
+	{
+    	 cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+		cout<<"Object Create"<<endl;
+	}
+	
+	~Myclass()
+	{
+		cout<<"Object Destroyed"<<endl;
+	}
+};
+int main()
+{
+	Myclass s1;
+	Myclass s2;
+}
