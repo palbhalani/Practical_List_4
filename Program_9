@@ -1,0 +1,29 @@
+// Write a C++ program to calculate addition of two numbers using Friend function. 
+
+#include<iostream>
+using namespace std;
+class simple
+{
+	private:
+		int a,b;
+		friend void addition(simple s);
+	public:
+		void getdata()
+		{
+			   cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+			cout<<"Enter The Number For Addition :: ";
+			cin>>a>>b;
+		}
+};
+void addition(simple s)
+{
+	cout<<"Addition Is ="<<s.a+s.b<<endl;
+}
+int main()
+{
+	simple s1;
+	s1.getdata();
+	addition(s1);
+	return 0;		
+}
