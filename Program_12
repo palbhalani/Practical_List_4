@@ -1,0 +1,32 @@
+// Write a C++ program to demonstrate use of copy constructor. 
+
+#include<iostream>
+using namespace std;
+class number{
+	public :
+		int a,b;
+		number(int x,int y)
+		{
+			a=x;
+			b=y;
+		     cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+			cout<<"Parametrized Constructor Called"<<endl;
+			cout<<"A="<<a<<endl;
+			cout<<"B="<<b<<endl;
+		}
+		number(number &z)
+		{
+			a=z.a;
+			b=z.b;
+			cout<<"Copy Constructor Called"<<endl;
+			cout<<"A="<<a<<endl;
+			cout<<"B="<<b<<endl;
+		}
+};
+int main()
+{
+	number n(5,10);
+	number n1(n);
+	return 0;
+}
