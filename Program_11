@@ -1,0 +1,23 @@
+// Write a C++ program to demonstrate use of Parameterized Constructor. 
+
+#include<iostream>
+using namespace std;
+class number{
+	public:
+		int a,b;
+		number(int x,int y)
+		{
+			a=x;
+			b=y;
+			   cout<<"My Name Is Bhalani Pal"<<endl;
+    cout<<"En_no :: 220130318080 "<<endl;
+			cout<<"Parameterized Constructor Called"<<endl;
+			cout<<"A="<<a<<endl;
+			cout<<"B="<<b<<endl;
+	}
+};
+int main()
+{
+	number(5,10);
+	return 0;
+}
